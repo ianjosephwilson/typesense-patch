@@ -1,0 +1,10 @@
+78a79,82
+> # Patch root CMakeLists.txt.
+> COPY patches/CMakeLists.txt.brpc.drop-sse4-flags.patch /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/CMakeLists.txt.patch
+> RUN patch /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/CMakeLists.txt /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/CMakeLists.txt.patch
+> RUN rm /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/CMakeLists.txt.patch
+88a93,96
+> # Patch root CMakeLists.txt.
+> COPY patches/CMakeLists.txt.braft.drop-sse4-flags.patch /opt/braft-80d97b2475b3c0afca79c19b64d46bb665d704f4/CMakeLists.txt.patch
+> RUN patch /opt/braft-80d97b2475b3c0afca79c19b64d46bb665d704f4/CMakeLists.txt /opt/braft-80d97b2475b3c0afca79c19b64d46bb665d704f4/CMakeLists.txt.patch
+> RUN rm /opt/braft-80d97b2475b3c0afca79c19b64d46bb665d704f4/CMakeLists.txt.patch

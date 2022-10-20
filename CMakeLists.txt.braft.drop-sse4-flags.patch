@@ -1,0 +1,4 @@
+213c213
+<     set(CMAKE_CPP_FLAGS "${CMAKE_CPP_FLAGS} -msse4 -msse4.2")
+---
+>     set(CMAKE_CPP_FLAGS "${CMAKE_CPP_FLAGS}")

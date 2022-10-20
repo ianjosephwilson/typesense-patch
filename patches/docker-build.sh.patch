@@ -1,0 +1,4 @@
+32c32
+< TYPESENSE_DEV_IMAGE="typesense-development:27-JUN-2022-1"
+---
+> TYPESENSE_DEV_IMAGE="typesense-development:nightly"
