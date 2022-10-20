@@ -1,9 +1,14 @@
 #!/bin/bash
 #
+# Fix typesense so it works on amd64 without sse4.
+#
 # - Download a tarball of the typesense repo
 # - Apply our patches
 # - Build the dev docker image
 # - Build the deployment docker image.
+#
+# You can now use the typesense/typesense:nightly docker image to develop
+# with locally.
 #
 
 set -ex
