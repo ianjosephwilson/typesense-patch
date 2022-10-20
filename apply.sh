@@ -24,7 +24,7 @@ else
     exit -1
 fi
 
-rm -Rf build
+sudo rm -Rf build
 mkdir build
 cd build
 curl -L  "https://github.com/typesense/typesense/tarball/${TYPESENSE_BRANCH}" -o typesense.tgz
