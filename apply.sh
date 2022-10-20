@@ -37,4 +37,4 @@ cp ../../patches/CMakeLists.txt.* docker/patches
 sudo rm -Rf build-Linux/
 sudo rm -Rf external-Linux/
 docker build --file docker/development.Dockerfile --tag typesense/typesense-development:nightly docker/
-TYPESENSE_VERSION=nightly ./docker-build.sh --build-deploy-image --create-binary --clean --depclean
+TYPESENSE_VERSION=nightly; ./docker-build.sh --build-deploy-image --create-binary --clean --depclean
