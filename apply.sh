@@ -13,7 +13,7 @@
 
 set -ex
 
-TYPESENSE_REPO=main
+TYPESENSE_BRANCH=main
 APPLY_SCRIPT=apply.sh
 
 echo "Checking that we are in the correct directory."
@@ -27,7 +27,7 @@ fi
 rm -Rf build
 mkdir build
 cd build
-curl -L  "https://github.com/typesense/typesense/tarball/${TYPESENSE_REPO}" -o typesense.tgz
+curl -L  "https://github.com/typesense/typesense/tarball/${TYPESENSE_BRANCH}" -o typesense.tgz
 tar -zxvf typesense.tgz
 mv typesense-typesense-* typesense
 cd typesense
